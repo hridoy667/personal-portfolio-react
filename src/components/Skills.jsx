@@ -1,20 +1,46 @@
 import React from 'react';
+import htmlLogo from '../assets/html.png';
+import cssLogo from '../assets/css.png';
+import reactLogo from '../assets/react.png';
+import jsLogo from '../assets/javascript.png';
+import tailwindLogo from '../assets/tailwind.png';
+import gitLogo from '../assets/git.png';
+import nodeLogo from '../assets/node.png';
+
 
 export default function Skills() {
-    return (
-        <div>
-            <main id='skills' className='py-6 px-4 sm:p-6 md:py-10 md:px-8'>
-                <div className='max-w-4xl mx-auto grid grid-cols-1 lg:max-w-5xl lg:gap-x-20 lg:grid-cols-2'>
-                    <div className='relative p-3 col-start-1 row start-1 flex flex-col-reverse rounded-lg bg-gradient-to-t from-black/75 via-black/0 sm:bg-none sm:row-start-2 sm:p-0 lg:row-start-1'>
-                        <h1 className='mt-1 text-lg font-semibold text-white sm:text-slate-900 md:text-3xl'>React</h1>
-                        <p className='text-sm leading-4 font-medium text-white sm:text-slate-500 md:text-blue-9'>Skills</p>
-                    </div>
-                    <div className='grid gap-4 col-start-1 col-end-3 row-start-1 sm:mb-6 sm:grid-cols-4 lg:gap-6 lg:col-start-2 lg:row-end-6 lg:row-span-6 lg:mb-0'>
+  const skills = [
+    { id: 1, name: 'React', img: htmlLogo },
+    { id: 2, name: 'React', img: cssLogo },
+    { id: 3, name: 'React', img: reactLogo },
+    { id: 4, name: 'JavaScript', img: jsLogo },
+    { id: 5, name: 'Tailwind CSS', img: tailwindLogo },
+    { id: 6, name: 'Git', img: gitLogo },
+    { id: 7, name: 'Node.js', img: nodeLogo }
+  ];
 
-                    </div>
-                </div>
-            </main>
-        </div>
-    );
+  return (
+    <main id="skills" className="py-10 px-4 flex flex-col items-center">
+  {/* Section Title */}
+  <div className="text-center">
+    <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">My Skills</h2>
+    <p className="text-gray-300 md:text-lg mb-6">Technologies I have experience with.</p>
+  </div>
+
+  {/* Skills Row */}
+  <div className="flex flex-wrap justify-center gap-4 md:gap-6 lg:gap-8 max-w-7xl">
+    {skills.map((skill) => (
+      <div key={skill.id} className="flex flex-col items-center">
+        <img
+          src={skill.img}
+          alt={skill.name}
+          className="w-12 h-12 md:w-16 md:h-16 transition-transform hover:scale-110"
+        />
+      </div>
+    ))}
+  </div>
+</main>
+
+
+  );
 }
-
