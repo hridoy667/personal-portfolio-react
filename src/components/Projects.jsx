@@ -27,7 +27,7 @@ export default function Projects() {
       {/* Section Title */}
       <div className="text-center mb-10">
         <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">My Projects</h2>
-        <p className="text-gray-300 md:text-lg">Some of the Projects I've done.</p>
+        <p className="text-gray-900 md:text-lg">Some of the Projects I've done.</p>
       </div>
 
       {/* Projects Grid */}

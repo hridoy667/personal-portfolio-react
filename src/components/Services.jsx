@@ -18,7 +18,7 @@ export default function Services() {
     {
       id: 3,
       title: "Full Stack Development",
-      description: "I build interactive web applications with React, Python, Django.",
+      description: "I build interactive web applications with Bootstrap, Python, Django.",
       icon: <FaCode className="text-4xl text-green-400" />,
     },
   ];
@@ -28,7 +28,7 @@ export default function Services() {
       {/* Section Title */}
       <div className="text-center mb-10">
         <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">My Services</h2>
-        <p className="text-gray-300 md:text-lg">What I can do for you.</p>
+        <p className="text-gray-900 md:text-lg">What I can do for you.</p>
       </div>
 
       {/* Services Grid */}
