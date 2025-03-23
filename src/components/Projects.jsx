@@ -10,7 +10,7 @@ export default function Projects() {
         id: 1,
         title: 'Symptocare: Connecting Symptoms to Health Solutions.',
         description: 'A full-stack Personalized Health Solution Platform.',
-        image: sympImage, // ✅ Imported correctly
+        image: sympImage,
         link: 'https://symptocare.up.railway.app'
       },
       {
@@ -35,7 +35,7 @@ export default function Projects() {
         {projects.map((project) => (
           <div 
             key={project.id} 
-            className="bg-gray-800 rounded-lg shadow-lg p-5 transform transition hover:scale-105"
+            className="bg-blue-900 rounded-lg shadow-lg p-5 transform transition hover:scale-105"
           >
             <img 
               src={project.image} 

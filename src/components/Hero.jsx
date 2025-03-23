@@ -5,7 +5,7 @@ import Navbar from './navbar';
 export default function Hero() {
   return (
     <div className='relative overflow-hidden min-h-[550px] sm:min-h-[650px] flex flex-col items-center'>
-      <div className='md:h-[720px] h-[990px] md:w-[1800px] w-[900px] bg-gradient-to-r absolute bg-blue-950 rounded-full transform rotate-5 -top-56'></div>
+      <div className='md:h-[720px] h-[990px] md:w-[1800px] w-[900px] bg-gradient-to-r absolute bg-blue-900 rounded-full transform rotate-5 -top-56'></div>
       <Navbar/>
       <section
         id='home'

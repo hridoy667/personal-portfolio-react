@@ -12,7 +12,7 @@ export default function Navbar() {
   ];
 
   return (
-    <header className="fixed top-0 left-0 w-full bg-transparent z-50">
+    <header className="fixed top-0 left-0 w-full bg-blue-900 z-50">
       <div className="container mx-auto flex flex-wrap p-5 items-center justify-between">
         {/* Portfolio Text */}
         <a className="flex font-medium title-font text-gray-900 mb-4 md:mb-0">
