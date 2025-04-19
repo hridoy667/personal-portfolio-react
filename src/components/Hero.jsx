@@ -30,12 +30,22 @@ export default function Hero() {
             data-aos="fade-up"
             data-aos-delay="200"
           >
-            <button className="bg-white hover:bg-blue-300 text-gray-950 font-semibold rounded-2xl text-sm px-6 py-2.5 transition duration-300">
-              Resume
-            </button>
-            <button className="bg-white hover:bg-blue-300 text-gray-950 font-semibold rounded-full text-sm px-6 py-2.5 transition duration-300">
-              Contact
-            </button>
+            <a
+              href="https://your-cv-drive-link-here"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-white hover:bg-blue-300 text-gray-950 font-semibold rounded-2xl text-sm px-6 py-2.5 transition duration-300 inline-block text-center"
+            >
+  Resume
+</a>
+
+            <a
+            href="#contact"
+            className="bg-white hover:bg-blue-300 text-gray-950 font-semibold rounded-full text-sm px-6 py-2.5 transition duration-300 inline-block text-center"
+            >
+  Contact
+</a>
+
           </div>
         </div>
 

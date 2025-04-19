@@ -63,15 +63,6 @@ export default function Contact() {
                   <span>Facebook</span>
                 </a>
 
-                <a
-                  href="https://twitter.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center space-x-2 text-gray-300 hover:text-blue-500"
-                >
-                  <FaTwitter className="text-lg" />
-                  <span>Twitter</span>
-                </a>
 
               </div>
             </div>
