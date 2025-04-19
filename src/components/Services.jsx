@@ -15,20 +15,14 @@ export default function Services() {
       description: "I build interactive UIs with React, Bootstrap, and Tailwind CSS.",
       icon: <FaCode className="text-4xl text-green-400" />,
     },
-    {
-      id: 3,
-      title: "Full Stack Development",
-      description: "I build interactive web applications with Bootstrap, Python, Django.",
-      icon: <FaCode className="text-4xl text-green-400" />,
-    },
+    
   ];
 
   return (
-    <section id="services" className="py-16 px-4 flex flex-col items-center">
+    <section id="services" className="py-16 px-4 flex flex-col items-center" data-aos="fade-up">
       {/* Section Title */}
       <div className="text-center mb-10">
-        <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">My Services</h2>
-        <p className="text-gray-900 md:text-lg">What I can do for you.</p>
+        <p className="text-gray-900 md:text-lg" data-aos="fade-right">What I can do for you.</p>
       </div>
 
       {/* Services Grid */}

@@ -13,37 +13,51 @@ export default function Navbar() {
 
   return (
     <header className="fixed top-0 left-0 w-full bg-blue-900 z-50">
-      <div className="container mx-auto flex flex-wrap p-5 items-center justify-between">
-        {/* Portfolio Text */}
-        <a className="flex font-medium title-font text-gray-900 mb-4 md:mb-0">
-          <span className="ml-9 mr-11 font-bold text-white text-3xl">Portfolio</span>
-        </a>
-
-        {/* Hamburger Button for Mobile */}
-        <button
-          className="md:hidden absolute right-6 top-6 text-white text-2xl"
-          onClick={() => setIsOpen(!isOpen)}
-        >
-          ☰
-        </button>
-
-        {/* Navigation Links */}
-        <nav
-          className={`md:flex md:space-x-8 md:mr-auto font-medium items-center text-base text-gray-300 justify-center absolute md:static top-16 left-0 w-full bg-blue-950 md:bg-transparent transition-all duration-300 ease-in-out ${
-            isOpen ? 'block' : 'hidden'
-          }`}
-        >
-          {NavLinks.map((e) => (
-            <a
-              key={e.id}
-              href={e.link}
-              className="block md:inline-block py-2 px-6 md:p-0 text-center hover:text-gray-500 transition duration-300 cursor-pointer"
-            >
-              {e.name}
-            </a>
-          ))}
-        </nav>
+    <div className="container mx-auto flex items-center justify-between px-6 py-4">
+      {/* Left - Portfolio Text */}
+      <a className="font-bold text-white text-2xl">Portfolio</a>
+  
+      {/* Desktop Navigation */}
+      <nav className="hidden md:flex space-x-8 text-gray-300 font-medium">
+        {NavLinks.map((e) => (
+          <a
+            key={e.id}
+            href={e.link}
+            className="hover:text-gray-400 transition duration-300"
+          >
+            {e.name}
+          </a>
+        ))}
+      </nav>
+  
+      {/* Mobile Hamburger */}
+      <button
+        className="md:hidden text-white text-2xl"
+        onClick={() => setIsOpen(!isOpen)}
+      >
+        ☰
+      </button>
+    </div>
+  
+    {/* Mobile Nav (Dropdown) */}
+    <nav
+      className={`md:hidden w-full px-6 transition-all duration-300 ease-in-out bg-gradient-to-r from-blue-900 via-blue-800 to-blue-900 ${
+        isOpen ? 'block' : 'hidden'
+      }`}
+    >
+      <div className="flex flex-col space-y-2 py-4">
+        {NavLinks.map((e) => (
+          <a
+            key={e.id}
+            href={e.link}
+            className="text-gray-300 hover:text-gray-400 transition duration-300"
+          >
+            {e.name}
+          </a>
+        ))}
       </div>
-    </header>
+    </nav>
+  </header>
+  
   );
 }

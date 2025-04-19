@@ -26,15 +26,14 @@ export default function Skills() {
   ];
 
   return (
-    <main id="skills" className="py-10 px-3 flex flex-col items-center">
+    <main id="skills" className="py-10 px-3 flex flex-col items-center" >
       {/* Section Title */}
-      <div className="text-center">
-        <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">My Skills</h2>
-        <p className="text-gray-800 md:text-lg mb-6">Technologies I have experience with.</p>
+      <div className="text-center ">
+        <p className="text-gray-800 md:text-lg mb-6 md:mb-10 mt-10" data-aos="fade-right">Technologies I have experience with</p>
       </div>
 
       {/* Skills Row */}
-      <div className="flex flex-wrap justify-center gap-8">
+      <div className="flex flex-wrap justify-center gap-8" data-aos="fade-up">
         {skills.map((skill) => (
           <div key={skill.id} className="relative group flex flex-col items-center">
             {/* Tooltip */}

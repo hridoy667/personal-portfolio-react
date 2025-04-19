@@ -23,11 +23,10 @@ export default function Projects() {
     ]
 
   return (
-    <main id="projects" className="py-16 px-4 flex flex-col items-center">
+    <main id="projects" className="py-16 px-4 flex flex-col items-center" data-aos="fade-up">
       {/* Section Title */}
       <div className="text-center mb-10">
-        <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">My Projects</h2>
-        <p className="text-gray-900 md:text-lg">Some of the Projects I've done.</p>
+        <p className="text-gray-900 md:text-lg" data-aos="fade-right">Some of the Projects I've done.</p>
       </div>
 
       {/* Projects Grid */}
@@ -35,8 +34,8 @@ export default function Projects() {
         {projects.map((project) => (
           <div 
             key={project.id} 
-            className="bg-blue-900 rounded-lg shadow-lg p-5 transform transition hover:scale-105"
-          >
+            className="bg-blue-900 rounded-lg shadow-lg p-5 transform transition hover:scale-105">
+            
             <img 
               src={project.image} 
               alt={project.title} 
@@ -48,13 +47,20 @@ export default function Projects() {
               href={project.link} 
               target="_blank" 
               rel="noopener noreferrer"
-              className="inline-block mt-4 bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md"
+              className="inline-block mt-4 bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md" 
             >
               View Project
             </a>
           </div>
         ))}
       </div>
+      <a 
+              href='https://github.com/hridoy667?tab=repositories'
+              target="_blank" 
+              className="inline-block mt-4 bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md"
+              data-aos="fade-right">
+              View more projects
+            </a>
     </main>
   );
 }
