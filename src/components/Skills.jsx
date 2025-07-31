@@ -29,11 +29,11 @@ export default function Skills() {
     <main id="skills" className="py-10 px-3 flex flex-col items-center" >
       {/* Section Title */}
       <div className="text-center ">
-        <p className="text-gray-800 md:text-lg mb-6 md:mb-10 mt-10" data-aos="fade-right">Technologies I have experience with</p>
+        <p className="text-gray-800 md:text-2xl mb-6 mt-10 md:mb-10" data-aos="fade-right">Technologies I have experience with</p>
       </div>
 
       {/* Skills Row */}
-      <div className="flex flex-wrap justify-center gap-8" data-aos="fade-up">
+      <div className="flex flex-wrap justify-center gap-8 mt-7" data-aos="fade-up">
         {skills.map((skill) => (
           <div key={skill.id} className="relative group flex flex-col items-center">
             {/* Tooltip */}

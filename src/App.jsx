@@ -20,7 +20,7 @@ function App() {
   }, []);
 
   return (
-    <main> 
+    <main className='block'> 
       <Navbar/>
       <Hero />
       <Skills />

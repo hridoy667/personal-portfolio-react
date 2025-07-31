@@ -19,14 +19,14 @@ export default function Services() {
   ];
 
   return (
-    <section id="services" className="py-16 px-4 flex flex-col items-center" data-aos="fade-up">
+    <section id="services" className="py-16 px-4 flex flex-col items-center pt-7" data-aos="fade-up">
       {/* Section Title */}
-      <div className="text-center mb-10">
-        <p className="text-gray-900 md:text-lg" data-aos="fade-right">What I can do for you.</p>
+      <div className="text-center mb-10 mb-8">
+        <p className="text-gray-900 md:text-2xl" data-aos="fade-right">What I can do for you</p>
       </div>
 
       {/* Services Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl">
+      <div className=" grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl ">
         {services.map((service) => (
           <div 
             key={service.id} 

@@ -9,7 +9,7 @@ export default function Projects() {
       {
         id: 1,
         title: 'Symptocare: Connecting Symptoms to Health Solutions.',
-        description: 'A full-stack Personalized Health Solution Platform.',
+        description: 'A full-stack Personalized Health Solution Platform using Django and Bootstrap.',
         image: sympImage,
         link: 'https://symptocare.up.railway.app'
       },
@@ -23,10 +23,10 @@ export default function Projects() {
     ]
 
   return (
-    <main id="projects" className="py-16 px-4 flex flex-col items-center" data-aos="fade-up">
+    <main id="projects" className="py-16 px-4 flex flex-col items-center pb-7" data-aos="fade-up">
       {/* Section Title */}
       <div className="text-center mb-10">
-        <p className="text-gray-900 md:text-lg" data-aos="fade-right">Some of the Projects I've done.</p>
+        <p className="text-gray-900 md:text-2xl" data-aos="fade-right">Some of the Projects I've done.</p>
       </div>
 
       {/* Projects Grid */}

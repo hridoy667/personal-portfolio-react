@@ -12,10 +12,10 @@ export default function Navbar() {
   ];
 
   return (
-    <header className="fixed top-0 left-0 w-full bg-blue-900 z-50">
-    <div className="container mx-auto flex items-center justify-between px-6 py-4">
+    <header className="fixed top-0 left-0 w-full bg-transparent z-50">
+    <div className="container mx-auto flex items-center justify-center px-6 py-4">
       {/* Left - Portfolio Text */}
-      <a className="font-bold text-white text-2xl">Portfolio</a>
+      <a className="font-bold text-white text-2xl pr-5">Portfolio</a>
   
       {/* Desktop Navigation */}
       <nav className="hidden md:flex space-x-8 text-gray-300 font-medium">
