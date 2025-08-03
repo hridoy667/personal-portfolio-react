@@ -32,7 +32,7 @@ export default function Services() {
   return (
     <section
       id="services"
-      className="py-24 px-6 flex flex-col items-center bg-gradient-to-b from-white to-gray-100"
+      className="py-24 px-6 flex flex-col items-center bg-gradient-to-r from-stone-300 via-gray-200 to-slate-800"
       data-aos="fade-up"
     >
       {/* Section Title */}

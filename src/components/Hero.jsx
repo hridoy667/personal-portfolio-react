@@ -34,7 +34,7 @@ export default function Hero() {
               href="https://drive.google.com/uc?export=download&id=1B6EgmtTUalZTIVG3GYEotLH3PPhZaUkF"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-4 py-2 rounded-md text-slate-950 shadow-lg bg-emerald-400 hover:shadow-none hover:bg-emerald-300 transition flex items-center"
+              className="px-4 py-2 rounded-md text-white hover:text-slate-950 shadow-lg bg-emerald-400 hover:shadow-none hover:bg-emerald-300 transition flex items-center"
             >
               <FaDownload className="mr-2" />
               Resume
@@ -42,7 +42,7 @@ export default function Hero() {
 
             <a
               href="#contact"
-              className="px-6 py-2 rounded-md shadow-lg text-slate-950 bg-emerald-400 hover:shadow-none hover:bg-emerald-300 transition  flex items-center sm:items-center"
+              className="px-6 py-2 rounded-md shadow-lg text-white hover:text-slate-950 bg-emerald-400 hover:shadow-none hover:bg-emerald-300 transition  flex items-center sm:items-center"
             >
               Contact
             </a>

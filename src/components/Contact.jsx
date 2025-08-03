@@ -7,7 +7,7 @@ export default function Contact() {
       <div className="max-w-5xl mx-auto">
         {/* Header */}
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold text-blue-400 mb-4">Get in Touch</h2>
+          <h2 className="text-white text-4xl md:text-5xl font-semibold mb-3">Get in Touch</h2>
           <p className="text-gray-300">
             Feel free to reach out for collaborations or just a friendly hello!
           </p>
@@ -109,7 +109,7 @@ export default function Contact() {
 
             <button
               type="submit"
-              className="w-full bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 rounded-lg transition duration-300"
+              className="w-full py-3 rounded-md text-white hover:text-slate-950 shadow-lg bg-emerald-400 hover:shadow-none hover:bg-emerald-300 transition duration-300"
             >
               Send Message
             </button>
