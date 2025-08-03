@@ -31,7 +31,7 @@ export default function Hero() {
             data-aos-delay="500"
           >
             <a
-              href="https://your-cv-drive-link-here"
+              href="https://drive.google.com/uc?export=download&id=1B6EgmtTUalZTIVG3GYEotLH3PPhZaUkF"
               target="_blank"
               rel="noopener noreferrer"
               className="px-4 py-2 rounded-md text-slate-950 shadow-lg bg-emerald-400 hover:shadow-none hover:bg-emerald-300 transition flex items-center"
