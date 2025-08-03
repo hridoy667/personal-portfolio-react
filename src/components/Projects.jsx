@@ -1,66 +1,90 @@
 import React from 'react';
 import sympImage from '../assets/symp.PNG';
-
+import easykaj from '../assets/easykaj.png'; // Fixing path issue
 
 export default function Projects() {
-    
-    
-    const projects = [
-      {
-        id: 1,
-        title: 'Symptocare: Connecting Symptoms to Health Solutions.',
-        description: 'A full-stack Personalized Health Solution Platform using Django and Bootstrap.',
-        image: sympImage,
-        link: 'https://symptocare.up.railway.app'
-      },
-      {
-        id: 2,
-        title: 'Portfolio Website',
-        description: 'A personal portfolio built with React & Tailwind CSS.',
-        image: '../assets/portfolio.png',
-        link: 'https://yourportfolio.com'
-      }
-    ]
+  const projects = [
+    {
+      id: 1,
+      title: 'Symptocare: Connecting Symptoms to Health Solutions.',
+      description: 'A full-stack Personalized Health Solution Platform using Django and Bootstrap.',
+      image: sympImage,
+      link: 'https://symptocare.up.railway.app',
+    },
+    {
+      id: 2,
+      title: 'EasyKaj-Your Personal Toolbelt',
+      description: 'A Full-Stack online tools website where user can find handy tools like pdf compressor, pdf to word converter etc built with React, Expressjs, MongoDB, Nodejs & Tailwind CSS.',
+      image:easykaj,
+      link: 'https://easykaj.netlify.app',
+    },
+  ];
 
   return (
-    <main id="projects" className="py-16 px-4 flex flex-col items-center pb-7" data-aos="fade-up">
+    <section
+      id="projects"
+      className="py-20 px-6 flex flex-col items-center bg-gradient-to-r from-black via-violet-900 to-black"
+    >
       {/* Section Title */}
-      <div className="text-center mb-10">
-        <p className="text-gray-900 md:text-2xl" data-aos="fade-right">Some of the Projects I've done.</p>
+      <div className="text-center mb-12">
+        <h2
+          className="text-white text-3xl md:text-4xl font-semibold mb-3"
+          data-aos="fade-right"
+        >
+          Featured Projects
+        </h2>
+        <p
+          className="text-gray-300 max-w-xl text-base md:text-lg"
+          data-aos="fade-right"
+          data-aos-delay="200"
+        >
+          Some of the projects I've developed with passion and purpose.
+        </p>
       </div>
 
       {/* Projects Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl">
+      <div
+        className="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-6xl w-full"
+        data-aos="fade-up"
+      >
         {projects.map((project) => (
-          <div 
-            key={project.id} 
-            className="bg-blue-900 rounded-lg shadow-lg p-5 transform transition hover:scale-105">
-            
-            <img 
-              src={project.image} 
-              alt={project.title} 
-              className="w-full h-56 object-cover rounded-md"
+          <div
+            key={project.id}
+            className="bg-gradient-to-br from-violet-800 to-gray-900 rounded-xl overflow-hidden shadow-lg border border-violet-700 transform transition hover:scale-[1.03]"
+          >
+            <img
+              src={project.image}
+              alt={project.title}
+              className="w-full h-60 object-contain"
             />
-            <h3 className="text-xl font-semibold text-white mt-4">{project.title}</h3>
-            <p className="text-gray-400 mt-2">{project.description}</p>
-            <a 
-              href={project.link} 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="inline-block mt-4 bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md" 
-            >
-              View Project
-            </a>
+            <div className="p-6">
+              <h3 className="text-2xl font-bold text-white mb-2">
+                {project.title}
+              </h3>
+              <p className="text-gray-300 mb-4">{project.description}</p>
+              <a
+                href={project.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block px-4 py-2 rounded-md text-slate-950 shadow-lg bg-emerald-400 rounded-md hover:shadow-none hover:bg-emerald-300 transition "
+              >
+                View Project
+              </a>
+            </div>
           </div>
         ))}
       </div>
-      <a 
-              href='https://github.com/hridoy667?tab=repositories'
-              target="_blank" 
-              className="inline-block mt-4 bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md"
-              data-aos="fade-right">
-              View more projects
-            </a>
-    </main>
+
+      {/* View More Button */}
+      <a
+        href="https://github.com/hridoy667?tab=repositories"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="mt-10 px-4 py-2 rounded-md text-white shadow-lg bg-emerald-400 rounded-md hover:shadow-none hover:text-slate-950 transition "
+        data-aos="fade-right"
+      >
+        View More Projects
+      </a>
+    </section>
   );
 }

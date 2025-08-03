@@ -1,34 +1,37 @@
-import React, { useEffect } from 'react';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
+import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
 import Services from './components/Services';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
-import Navbar from './components/navbar';
+
+import Blog from './components/Blog'; // Create this!
 
 function App() {
-  useEffect(() => {
-    AOS.init({
-      duration: 800, 
-      once: false,   
-      easing: 'ease-in-out',
-    });
-  }, []);
-
   return (
-    <main className='block'> 
-      <Navbar/>
-      <Hero />
-      <Skills />
-      <Projects />
-      <Services />
-      <Contact />
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <>
+              <Hero />
+              <Skills />
+              <Projects />
+              <Services />
+              <Contact />
+            </>
+          }
+        />
+        <Route path="/blog" element={<Blog />} />
+      </Routes>
       <Footer />
-    </main>
+    </Router>
   );
 }
 

@@ -1,21 +1,21 @@
 import React from 'react';
 import me from '../assets/me.png';
-import Navbar from './navbar';
-
+import { FaQuoteLeft,FaDownload } from "react-icons/fa";
 export default function Hero() {
   return (
-    <div className="relative overflow-hidden pt-9 sm:pt-20 flex flex-col bg-gradient-to-r from-violet-800 to-black ">
+    <div className="relative overflow-hidden pt-28 sm:pt-36 flex flex-col bg-gradient-to-r from-violet-800 to-black ">
       <section
         id="home"
-        className=" relative z-10 flex flex-col-reverse md:flex-row items-center justify-between w-full max-w-7xl px-6 md:px-20 mx-auto sm:md-3 md:mt-36"
+        className="relative z-10 flex flex-col-reverse md:flex-row items-center justify-between w-full max-w-7xl px-6 md:px-20 mx-auto"
       >
         {/* Left Side (Text) */}
         <div
-          className="flex-1 text-center md:text-left mt-12 md:mt-0 "
+          className="flex-1 text-center md:text-left mt-12 md:mt-0"
           data-aos="fade-right"
         >
-          <h1 className="text-xl sm:text-4xl md:text-5xl font-bold text-white mb-4 sm:mb-1 font-roboto">
-            Hi, I'm
+          <h1 className="text-xl text-emerald-400 sm:text-4xl md:text-5xl font-bold text-white mb-4 font-roboto">
+          <sup><FaQuoteLeft className="inline text-emerald-400 text-[25px] mr-1" /></sup>
+          Hi, I'm
           </h1>
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4">
             Ali Imam Hridoy
@@ -26,7 +26,7 @@ export default function Hero() {
 
           {/* Buttons */}
           <div
-            className="flex flex-col sm:flex-row sm:justify-center sm:justify-center gap-4 sm:gap-2 pb-4 md:justify-start "
+            className="flex flex-col sm:flex-row gap-6 pb-4 md:justify-start"
             data-aos="fade-up"
             data-aos-delay="500"
           >
@@ -34,20 +34,18 @@ export default function Hero() {
               href="https://your-cv-drive-link-here"
               target="_blank"
               rel="noopener noreferrer"
-              className=" px-4 py-2 rounded-md text-white bg-blue-600 hover:bg-blue-700 transition
-                          max-[633px]:block max-[633px]:w-sm max-[633px]:text-center max-[633px]:bg-indigo-600"
+              className="px-4 py-2 rounded-md text-slate-950 shadow-lg bg-emerald-400 hover:shadow-none hover:bg-emerald-300 transition flex items-center"
             >
+              <FaDownload className="mr-2" />
               Resume
             </a>
 
             <a
               href="#contact"
-              className=" px-4 py-2 rounded-lg text-white bg-blue-500 hover:bg-blue-700 transition
-    max-[633px]:block max-[633px]:w-sm max-[633px]:text-center max-[633px]:bg-indigo-600 "
+              className="px-6 py-2 rounded-md shadow-lg text-slate-950 bg-emerald-400 hover:shadow-none hover:bg-emerald-300 transition  flex items-center sm:items-center"
             >
               Contact
             </a>
-
           </div>
         </div>
 
@@ -59,7 +57,7 @@ export default function Hero() {
           <img
             src={me}
             alt="Ali Imam Hridoy"
-            className="h-82 w-58 object-cover rounded-lg sm:h-90 sm:w-56 md:h-[500px] md:w-[320px] "
+            className="h-82 w-58 object-cover shadow-md rounded-lg sm:h-90 sm:w-56 md:h-[500px] md:w-[320px]"
           />
         </div>
       </section>
